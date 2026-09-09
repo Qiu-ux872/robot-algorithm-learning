@@ -1,0 +1,53 @@
+{
+  "env": {
+    "ros_distro": "humble",
+    "ros_workspace": "${workspaceFolder}/learning_ws"
+  },
+  "configurations": [
+    {
+      "name": "ROS2-Humble",
+      "includePath": [
+        "${ros_workspace}/install/**/include",
+        "${ros_workspace}/src/**/include",
+        "/opt/ros/${ros_distro}/include/**",
+        "/opt/ros/${ros_distro}/include/rclcpp",
+        "/opt/ros/${ros_distro}/include/rclcpp_lifecycle",
+        "/opt/ros/${ros_distro}/include/rcl",
+        "/opt/ros/${ros_distro}/include/rcutils",
+        "/opt/ros/${ros_distro}/include/rmw",
+        "/opt/ros/${ros_distro}/include/rcl_yaml_param_parser",
+        "/opt/ros/${ros_distro}/include/rcl_interfaces",
+        "/opt/ros/${ros_distro}/include/std_msgs",
+        "/opt/ros/${ros_distro}/include/sensor_msgs",
+        "/opt/ros/${ros_distro}/include/geometry_msgs",
+        "/opt/ros/${ros_distro}/include/std_srvs",
+        "/opt/ros/${ros_distro}/include/example_interfaces",
+        "/opt/ros/${ros_distro}/include/ament_index_cpp",
+        "/opt/ros/${ros_distro}/include/builtin_interfaces",
+        "/opt/ros/${ros_distro}/include/rosidl_runtime_cpp",
+        "/opt/ros/${ros_distro}/include/rosidl_runtime_c",
+        "/opt/ros/${ros_distro}/include/rosidl_typesupport_cpp",
+        "/opt/ros/${ros_distro}/include/rosidl_typesupport_c",
+        "/opt/ros/${ros_distro}/include/rosidl_typesupport_introspection_cpp",
+        "/opt/ros/${ros_distro}/include/rosidl_typesupport_introspection_c",
+        "/opt/ros/${ros_distro}/include/rosidl_typesupport_interface",
+        "/opt/ros/${ros_distro}/include/fastrtps",
+        "/opt/ros/${ros_distro}/include/rmw_fastrtps_cpp",
+        "/opt/ros/${ros_distro}/include/rosidl_typesupport_fastrtps_cpp",
+        "/opt/ros/${ros_distro}/include/tracetools",
+        "/opt/ros/${ros_distro}/include/rcl_logging_interface",
+        "/opt/ros/${ros_distro}/include/ament_index_cpp",
+        "/usr/include/x86_64-linux-gnu/c++/**",
+        "/usr/include/c++/**",
+        "/usr/include/**",
+        "/usr/local/include/**"
+      ],
+      "defines": [],
+      "compilerPath": "/usr/bin/g++",
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "linux-gcc-x64"
+    }
+  ],
+  "version": 4
+}

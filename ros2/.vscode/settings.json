@@ -1,0 +1,37 @@
+{
+  "editor.formatOnSave": false,
+  "files.associations": {
+    "*.h": "cpp",
+    "*.hpp": "cpp"
+  },
+  "C_Cpp.default.cppStandard": "c++17",
+  "C_Cpp.default.standard": "c++17",
+  "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
+  "C_Cpp.default.compilerPath": "/usr/bin/g++",
+  "C_Cpp.default.includePath": [
+    "${workspaceFolder}/install/**/include",
+    "/opt/ros/humble/include/**",
+    "/usr/include/**",
+    "/usr/local/include/**"
+  ],
+  "C_Cpp.intelliSenseEngine": "default",
+  "C_Cpp.intelliSenseEngineFallback": "enabled",
+  "C_Cpp.updateChannel": "default",
+  "cmake.configureOnOpen": false,
+  "search.exclude": {
+    "**/build/**": true,
+    "**/install/**": true,
+    "**/log/**": true
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/build": true,
+    "**/install": true,
+    "**/log": true
+  },
+  "files.watcherExclude": {
+    "**/build/**": true,
+    "**/install/**": true,
+    "**/log/**": true
+  }
+}

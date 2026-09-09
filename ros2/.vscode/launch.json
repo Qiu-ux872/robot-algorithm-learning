@@ -1,0 +1,53 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "ROS2: Debug C++ Node (gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${input:executablePath}",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "colcon build",
+      "miDebuggerPath": "/usr/bin/gdb"
+    },
+    {
+      "name": "ROS2: Run C++ Node (Integrated Terminal)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${input:executablePath}",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "miDebuggerPath": "/usr/bin/gdb"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "executablePath",
+      "type": "promptString",
+      "description": "Enter the path to your compiled node executable, e.g. install/<pkg_name>/lib/<pkg_name>/<node_name>",
+      "default": "install/"
+    }
+  ]
+}

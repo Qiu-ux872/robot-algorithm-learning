@@ -1,0 +1,8 @@
+source;share/ws01_qiu/hook/cmake_prefix_path.ps1
+source;share/ws01_qiu/hook/cmake_prefix_path.dsv
+source;share/ws01_qiu/hook/cmake_prefix_path.sh
+source;share/ws01_qiu/local_setup.bash
+source;share/ws01_qiu/local_setup.dsv
+source;share/ws01_qiu/local_setup.ps1
+source;share/ws01_qiu/local_setup.sh
+source;share/ws01_qiu/local_setup.zsh
