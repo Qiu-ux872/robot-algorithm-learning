@@ -11,12 +11,16 @@
   "C_Cpp.default.includePath": [
     "${workspaceFolder}/install/**/include",
     "/opt/ros/humble/include/**",
+    "/usr/include/x86_64-linux-gnu/qt5",
+    "/usr/include/x86_64-linux-gnu/qt5/QtCore",
+    "/usr/include/x86_64-linux-gnu/qt5/QtGui",
+    "/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
     "/usr/include/**",
     "/usr/local/include/**"
   ],
-  "C_Cpp.intelliSenseEngine": "default",
-  "C_Cpp.intelliSenseEngineFallback": "enabled",
-  "C_Cpp.updateChannel": "default",
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "C_Cpp.intelliSenseEngineFallback": "disabled",
+  "clangd.enable": true,
   "cmake.configureOnOpen": false,
   "search.exclude": {
     "**/build/**": true,

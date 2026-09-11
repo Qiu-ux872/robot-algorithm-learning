@@ -159,6 +159,10 @@ CompileFlags:
     - "-I/opt/ros/humble/include/urdfdom"
     - "-I/opt/ros/humble/include/urdfdom_headers"
     - "-I/opt/ros/humble/include/visualization_msgs"
+    - "-I/usr/include/x86_64-linux-gnu/qt5"
+    - "-I/usr/include/x86_64-linux-gnu/qt5/QtCore"
+    - "-I/usr/include/x86_64-linux-gnu/qt5/QtGui"
+    - "-I/usr/include/x86_64-linux-gnu/qt5/QtWidgets"
 
 Diagnostics:
   UnusedIncludes: None

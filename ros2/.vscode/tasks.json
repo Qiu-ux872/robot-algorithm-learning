@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
   "options": {
-    "cwd": "${workspaceFolder}"
+    "cwd": "${workspaceFolder}/learning_ws"
   },
   "tasks": [
     {
@@ -10,7 +10,7 @@
       "command": "bash",
       "args": [
         "-lc",
-        "source /opt/ros/humble/setup.bash && colcon build"
+        "source /opt/ros/humble/setup.bash && colcon build --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON && python3 merge_compile_commands.py"
       ],
       "group": {
         "kind": "build",
@@ -31,25 +31,7 @@
       "command": "bash",
       "args": [
         "-lc",
-        "source /opt/ros/humble/setup.bash && colcon build --symlink-install"
-      ],
-      "group": "build",
-      "problemMatcher": [
-        "$gcc"
-      ],
-      "presentation": {
-        "reveal": "always",
-        "panel": "shared",
-        "clear": true
-      }
-    },
-    {
-      "label": "colcon build + export compile_commands",
-      "type": "shell",
-      "command": "bash",
-      "args": [
-        "-lc",
-        "source /opt/ros/humble/setup.bash && colcon build --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON"
+        "source /opt/ros/humble/setup.bash && colcon build --symlink-install --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON && python3 merge_compile_commands.py"
       ],
       "group": "build",
       "problemMatcher": [
@@ -67,7 +49,7 @@
       "command": "bash",
       "args": [
         "-lc",
-        "rm -rf build install log"
+        "rm -rf build install log compile_commands.json"
       ],
       "problemMatcher": []
     },
