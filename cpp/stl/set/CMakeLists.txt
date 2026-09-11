@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.10)
+project(set)
+
+add_executable(1.set_construct_func 1.set_construct_func.cpp)
+add_executable(2.set_capacity_swap 2.set_capacity_swap.cpp)
+add_executable(3.set_insert_delete 3.set_insert_delete.cpp)
+add_executable(4.set_search_compute 4.set_search_compute.cpp)
+add_executable(5.set_multiset 5.set_multiset.cpp)
+add_executable(6.pair_using 6.pair_using.cpp)
+add_executable(7.set_sorting 7.set_sorting.cpp)
+add_executable(8.sorting_set 8.sorting_set.cpp)
